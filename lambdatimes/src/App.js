@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
-import TopBar from './components/TopBar';
-import Header from './components/Header';
-import Content from './components/Content/Content';
+import React from "react";
+import authenticate from "./components/auth/authenticate";
+import Login from "./components/auth/Login";
+import AppHolder from "./components/AppHolder";
+import "./CSS/index.css";
+
+const Visible = authenticate(AppHolder)(Login);
 
 const App = () => {
   return (
     <div className="App">
-      <TopBar />
-      <Header />
-      <Content />
+      <Visible />
     </div>
   );
-}
+};
 
 export default App;
