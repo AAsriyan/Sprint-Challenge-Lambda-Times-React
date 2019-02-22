@@ -34,6 +34,7 @@ export default class Carousel extends Component {
     return (
       <img
         src={this.state.carData[this.state.index]}
+        alt="random landscape"
         style={{ display: "block" }}
       />
     );

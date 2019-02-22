@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import authenticate from "./components/auth/authenticate";
 import Login from "./components/auth/Login";
 import AppHolder from "./components/AppHolder";
